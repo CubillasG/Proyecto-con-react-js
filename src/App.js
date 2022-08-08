@@ -1,19 +1,23 @@
-import { Outlet } from 'react-router-dom';
+
 import NavBar from './Componentes/NavBar';
 import Section from './Componentes/Section';
-
+import Container from 'react-bootstrap/Container'
+import { Outlet } from 'react-router-dom';
 function App() {
   return (
 <>
-      <header>
         <NavBar/>
         <Outlet/>
+ 
 
-      </header>
 
-      <section>
+
+      {/* <section>
+      <Container>
         <Section/>
-      </section>
+      </Container>
+      </section> */}
+      
   </>
   );
 }

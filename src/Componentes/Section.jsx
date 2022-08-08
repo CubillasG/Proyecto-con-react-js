@@ -1,29 +1,37 @@
 import React from 'react'
+import Row  from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Logo from '../assets/logoLarge.png'
+import Col from 'react-bootstrap/Col'
+import Logo from '../assets/imagen.png'
+import { Link } from 'react-router-dom';
+import {Nav, Navbar,NavDropdown, Container} from 'react-bootstrap'
+import estilo from '../Componentes/Estilo.css'
 
 const Section = () => {
   return (
 
     <>
+    <Row>
+   <Col>
+      <Card.Img variant="top" src={Logo} className='Estilo' />
+   </Col>
+ 
+
+  <Col>
       <Card >
-      <Card.Header>Featured</Card.Header>
       <Card.Body>
-        <Card.Title>Special title treatment</Card.Title>
+        <Card.Title>Card Title</Card.Title>
         <Card.Text>
-          With supporting text below as a natural lead-in to additional content.
+          DIGIIZE YOUR BUSINESS NOW AND REACH NEW CUSTOMERS THROUGH THE INTERNET
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Nav.Link as={Link} to='about'>
+        <Button variant="primary">START NOW</Button>
+        </Nav.Link>
       </Card.Body>
-      <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
-    
-
-   <div>
-   <Card.Img variant="top" src={Logo} />
-
-    </div> 
+    </Col>
+    </Row> 
  </>
   )
 }

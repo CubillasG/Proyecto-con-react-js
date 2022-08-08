@@ -1,9 +1,10 @@
 import React from 'react'
+import Paquetes from '../Componentes/Paquetes'
 
 const Sobre = () => {
   return (
-    <div>
-      <h2>About</h2>
+    <div className='container'>
+      <Paquetes/>
     </div>
   )
 }
