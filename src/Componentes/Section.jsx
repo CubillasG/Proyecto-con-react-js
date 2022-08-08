@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col'
 import Logo from '../assets/imagen.png'
 import { Link } from 'react-router-dom';
 import {Nav, Navbar,NavDropdown, Container} from 'react-bootstrap'
-import estilo from '../Componentes/Estilo.css'
+
 
 const Section = () => {
   return (

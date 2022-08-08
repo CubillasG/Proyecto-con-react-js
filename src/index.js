@@ -17,6 +17,7 @@ root.render(
   <Route index element={<Inicio/>}></Route>
   <Route path='about' element={<Sobre/>}></Route>
   <Route path='contactos' element={<Contactos/>}></Route>
+  
   </Route>
   </Routes>
   
